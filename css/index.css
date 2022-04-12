@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,700;1,500&family=M+PLUS+1:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800&family=Roboto+Condensed:wght@300;400;700&family=Rubik:wght@300;400;500&family=Spartan:wght@700&display=swap");
+
+:root {
+  --pink: #fec7d7;
+  --purple: #a786df;
+  --gray: #d9d4e7;
+  --light-green: #85d1ce;
+  --light-blue: #91c1d7;
+  --white: #fffffe;
+  --black: #0e172c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "M PLUS 1", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Spartan", sans-serif;
+}
+
+/* GLOBAL STYLES */
+body {
+  background: var(--pink);
+}
+h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--black);
+}
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+p {
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 150%;
+}
+
+a {
+  font-size: 1.6rem;
+}
+
+.contenedor {
+  max-width: 1440px;
+}
+
+.contenedor-logo {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 70%;
+  animation: logo 1.8s linear;
+}
+
+@keyframes logo {
+  from {
+    width: 25%;
+    transform: rotate(360deg);
+  }
+  to {
+    width: 70%;
+  }
+}
+.descripcion {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.descripcion p {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.descripcion a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  background: var(--black);
+  width: 100%;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.descripcion-2 {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.descripcion-2 p {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.descripcion-2 a.btn-siguiente-2 {
+  border: 2px #fff solid;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  background: var(--black);
+  text-transform: capitalize;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 30px;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    width: 30%;
+  }
+  @keyframes logo {
+    from {
+      width: 15%;
+      transform: rotate(-360deg);
+    }
+    to {
+      width: 30%;
+    }
+  }
+}

@@ -1,0 +1,193 @@
+.singlePetContainer {
+  height: 100vh;
+  max-width: 1440px;
+  width: 100%;
+  position: relative;
+}
+
+.singlePetContainer img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.container-info {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  top: 55%;
+  position: absolute;
+  padding: 2rem 2rem;
+  background: var(--white);
+}
+
+.container-info img {
+  width: 7%;
+}
+
+.container-info .nombre-add-f {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-info .nombre-add-f h1 {
+  text-transform: capitalize;
+}
+
+.container-info .nombre-add-f span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.container-info .nombre-add-f span i {
+  font-size: 2.6rem;
+  color: var(--gray);
+}
+
+.container-info .nombre-add-f span i.active {
+  color: var(--purple);
+}
+
+.container-info .raza-edad {
+  margin-top: 3rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-info .raza-edad .raza {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.container-info .raza-edad .raza img {
+  width: 40px;
+}
+
+.container-info .raza-edad .edad {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.container-info .raza-edad .edad img {
+  width: 40px;
+}
+
+.container-info .ubicacion {
+  margin-top: 2rem;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container-info .ubicacion img {
+  width: 30px;
+}
+
+.container-info .personalidad {
+  margin-top: 3rem;
+}
+
+.container-info .personalidad h1 {
+  text-transform: capitalize;
+}
+
+.container-info .personalidad .tipos {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-info .personalidad .tipos img {
+  width: 30px;
+}
+
+.container-info .personalidad .tipos .tipo-1,
+.tipo-2,
+.tipo-3 {
+  text-transform: capitalize;
+  width: 30%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--purple);
+}
+
+.container-info .historia {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container-info .historia h1 {
+  text-transform: capitalize;
+}
+
+.back {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 15px;
+  left: 15px;
+  background: var(--black);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.back i {
+  color: var(--white);
+  font-size: 2.4rem;
+}
+
+.contacto {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacto .publicador-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contacto img {
+  border: 5px solid var(--light-green);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.contacto .publicadoPor h2 {
+  text-transform: capitalize;
+}
+
+.contacto a {
+  padding: 2rem 0rem;
+  border-radius: 30px;
+  width: 40%;
+  text-align: center;
+  color: var(--white);
+  background: var(--black);
+}
