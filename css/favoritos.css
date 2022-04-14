@@ -1,5 +1,11 @@
 .contenedor-favoritos {
+  max-width: 840px;
   padding: 1rem;
+}
+@media (min-width: 480px) {
+  .contenedor-favoritos {
+    margin: 0 auto;
+  }
 }
 
 .mascotas-favoritas {

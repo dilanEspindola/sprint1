@@ -1,3 +1,9 @@
+window.addEventListener("DOMContentLoaded", () => {
+  const data = JSON.parse(localStorage.getItem("favs"));
+  console.log(data);
+  console.log(getPetFromLocalStorage());
+});
+
 function getPetFromLocalStorage() {
   const getPet = JSON.parse(localStorage.getItem("pet"));
   const containerPet = document.querySelector(".singlePetContainer");

@@ -1,5 +1,11 @@
 .contenedor-chat {
+  max-width: 840px;
   position: relative;
+}
+@media (min-width: 840px) {
+  .contenedor-chat {
+    margin: 0 auto;
+  }
 }
 
 .contenedor-chat .icon-back {
@@ -36,14 +42,64 @@
   border: 3px solid var(--light-green);
 }
 
+/* chat */
+.cuerpo-chat {
+  padding: 4rem 2rem;
+  margin-bottom: 3rem;
+  display: grid;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.cuerpo-chat .msg-1 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cuerpo-chat .msg-1 .contenedor-msg {
+  padding: 2rem;
+  border-radius: 30px;
+  background: var(--white);
+  width: 85%;
+}
+
+.cuerpo-chat .msg-2 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cuerpo-chat .msg-2 .contenedor-msg {
+  padding: 2rem;
+  border-radius: 30px;
+  background: rgb(87, 86, 86);
+  width: 85%;
+}
+
+.cuerpo-chat .msg-2 .contenedor-msg p {
+  color: var(--white);
+}
+
 form {
   bottom: 0;
   position: fixed;
   width: 100%;
+  max-width: 840px;
   padding: 1rem;
 }
 
 form input {
   width: 100%;
   padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+form input:focus {
+  outline: 1px solid;
+}
+
+form input:focus {
+  position: relative;
+  bottom: 50%;
 }

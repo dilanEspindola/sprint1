@@ -1,6 +1,11 @@
 .contenedor-mascotas {
-  max-width: 1440px;
+  max-width: 840px;
   padding: 2rem 1rem;
+}
+@media (min-width: 840px) {
+  .contenedor-mascotas {
+    margin: 0 auto;
+  }
 }
 
 .categorias-mascotas h2 {

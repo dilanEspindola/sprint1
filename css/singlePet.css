@@ -1,8 +1,13 @@
 .singlePetContainer {
   height: 100vh;
-  max-width: 1440px;
+  max-width: 840px;
   width: 100%;
   position: relative;
+}
+@media (min-width: 840px) {
+  .singlePetContainer {
+    margin: 0 auto;
+  }
 }
 
 .singlePetContainer img {

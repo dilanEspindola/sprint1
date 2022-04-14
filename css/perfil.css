@@ -1,0 +1,111 @@
+.contenedor-perfil {
+  max-width: 840px;
+  height: 150vh;
+}
+@media (min-width: 840px) {
+  .contenedor-perfil {
+    margin: 0 auto;
+  }
+}
+
+.contenedor-perfil h1 {
+  margin: 2rem;
+}
+
+.contenedor-form {
+  margin: 2rem;
+}
+
+.img-nombre-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-nombre-info h2 {
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  font-weight: 200 !important;
+  color: var(--black);
+}
+
+img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--black);
+}
+
+.label-input label {
+  font-size: 1.6rem;
+  margin-left: 2rem;
+}
+
+form input {
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.9);
+  padding: 2rem;
+  border-radius: 6px;
+  border: 1px solid var(--black);
+  outline: none;
+}
+
+button {
+  padding: 2rem;
+  background: var(--black);
+  color: var(--white);
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+nav {
+  margin-top: 5rem;
+  z-index: 111;
+  bottom: 0;
+  padding: 2rem 1rem;
+  position: fixed;
+  max-width: 1440px;
+  width: 100%;
+  background: var(--white);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul a {
+  display: flex;
+  text-decoration: none;
+}
+
+nav ul a {
+  color: var(--black);
+}
+nav ul a i {
+  font-size: 2.2rem;
+}
+
+nav ul a.active {
+  background: var(--black);
+  border-radius: 30px;
+  color: var(--light-green);
+  padding: 1rem 2.5rem;
+}
+
+nav ul a.active i {
+  color: var(--light-green);
+}

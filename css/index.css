@@ -49,12 +49,22 @@ p {
   line-height: 150%;
 }
 
-a {
+a,
+button {
   font-size: 1.6rem;
 }
 
 .contenedor {
-  max-width: 1440px;
+  max-width: 840px;
+}
+@media (min-width: 840px) {
+  .contenedor {
+    margin: 0 auto;
+  }
+  .descripcion-2 {
+    max-width: 840px;
+    margin: 0 auto;
+  }
 }
 
 .contenedor-logo {
@@ -114,7 +124,6 @@ a {
 }
 
 .descripcion-2 a.btn-siguiente-2 {
-  border: 2px #fff solid;
   cursor: pointer;
   text-decoration: none;
   color: #fff;
